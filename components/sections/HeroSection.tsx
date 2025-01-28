@@ -177,7 +177,7 @@ const HeroSection = () => {
           >
             <div className="relative w-full h-80 overflow-hidden md:h-[40.625rem]">
               <Image
-                src="/code-1.png"
+                src="/hero-img.jpg"
                 alt="coding-image"
                 fill
                 priority
