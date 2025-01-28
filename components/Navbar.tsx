@@ -1,25 +1,28 @@
 import React from "react";
-import Image from "next/image";
-import SheetNavbar from "./SheetNavbar";
-import NavMenu from "./NavMenu";
+import Link from "next/link"
 const Navbar = () => {
   return (
-    <div className="bg-[#312B2B] px-3 py-6 w-full flex flex-row items-center justify-between sticky top-0 z-[1000]">
-      <div className="w-10 h-10 relative overflow-hidden">
-        <Image
-          src={"/logo.png"}
-          alt="acelux logo"
-          fill
-          priority
-          objectFit="cover"
-          objectPosition="center"
-        />
-      </div>
-      <div className="hidden lg:block">
-        <NavMenu />
-      </div>
-      <div className="lg:hidden">
-        <SheetNavbar />
+    <div className="bg-[#202020] px-3 py-6 w-full flex flex-row items-center justify-between sticky top-0 z-[1000]">
+      <Link href="" className="font-jost">LA. Deen</Link>
+      <ul className="flex flex-row items-center justify-between gap-6">
+        <li>
+          <Link href="#home">About</Link>
+        </li>{" "}
+        <li>
+          <Link href="#about">Services</Link>
+        </li>{" "}
+        <li>
+          <Link href="#services">Projects</Link>
+        </li>{" "}
+        <li>
+          <Link href="#footer">Contact</Link>
+        </li>
+      </ul>
+      <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-row items-center justify-center w-6 h-6 bg-green-300 rounded-full animate-pulse">
+          <div className="w-3 h-3 bg-green-600 rounded-full"></div>
+        </div>
+        <p className="font-jost hidden lg:block">Available for work</p>
       </div>
     </div>
   );

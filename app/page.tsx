@@ -2,6 +2,7 @@
 import SplashScreen from "@/components/screens/splash-screen";
 import React from "react";
 import { useState } from "react";
+import Navbar from "@/components/Navbar"
 import HeroSection from "@/components/sections/HeroSection";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
@@ -30,6 +31,7 @@ const IndexPage = () => {
         <SplashScreen />
       ) : (
         <>
+          <Navbar />
           <HeroSection />
           <About />
           <Skills />

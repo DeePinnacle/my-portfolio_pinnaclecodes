@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins text-[gray] bg-[#050505e3];
+  /* #050505e3 */
+  @apply font-poppins text-[gray] bg-[#202020];
 }
 
 @layer base {
