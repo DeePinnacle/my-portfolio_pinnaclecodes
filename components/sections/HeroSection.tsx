@@ -147,7 +147,7 @@ const HeroSection = () => {
             >
               LAWAL KAMALDEEN.
             </motion.p>
-            <div className="w-full p-2 my-4 rounded-full flex flex-row flex-wrap items-center justify-evenly gap-5 lg:gap-6">
+            <div className="w-full p-2 my-4 rounded-full flex flex-row flex-wrap items-center justify-evenly gap-4 md:gap-5 lg:gap-6">
             <FaHtml5 className="text-2xl md:text-3xl lg:text-5xl" />
             <FaCss3 className="text-2xl md:text-3xl lg:text-5xl" />
             <IoLogoJavascript className="text-2xl md:text-3xl lg:text-5xl" />

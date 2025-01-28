@@ -26,12 +26,13 @@ const CTA = () => {
         className="relative w-full h-[25rem] md:h-[45rem] lg:h-[35rem]"
       >
         <Image
-          src={"/skills-img.png"}
+          src={"/cta-img.jpg"}
           alt="computer-operator"
           fill
           priority
           objectFit="cover"
           objectPosition="center"
+          className="-scale-x-100"
         />
       </motion.div>
       {/* content */}
