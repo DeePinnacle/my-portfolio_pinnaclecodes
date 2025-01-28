@@ -6,7 +6,13 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { WordFlip } from "@/components/WordFlip";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaGitAlt, FaLinkedin, FaGithub, FaInstagram, FaWhatsapp, FaGit } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiShadcnui, SiFramer } from "react-icons/si";
+import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
+import { DiMongodb } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
+import {  } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <section className="w-full lg:flex lg:flex-col lg:items-center lg:justify-center">
@@ -141,6 +147,21 @@ const HeroSection = () => {
             >
               LAWAL KAMALDEEN.
             </motion.p>
+            <div className="w-full p-2 my-4 rounded-full flex flex-row flex-wrap items-center justify-evenly gap-5 lg:gap-6">
+            <FaHtml5 className="text-2xl md:text-3xl lg:text-5xl" />
+            <FaCss3 className="text-2xl md:text-3xl lg:text-5xl" />
+            <IoLogoJavascript className="text-2xl md:text-3xl lg:text-5xl" />
+            <FaReact className="text-2xl md:text-3xl lg:text-5xl" />
+            <RiNextjsLine className="text-2xl md:text-3xl lg:text-5xl" />
+            <RiTailwindCssFill className="text-2xl md:text-3xl lg:text-5xl" />
+            <SiFramer className="text-2xl md:text-3xl lg:text-5xl" />
+            <SiShadcnui className="text-2xl md:text-3xl lg:text-5xl" />
+            <FaNodeJs className="text-2xl md:text-3xl lg:text-5xl" />
+            <FaGitAlt className="text-2xl md:text-3xl lg:text-5xl" />
+            <FaGit className="text-2xl md:text-3xl lg:text-5xl" />
+            <DiMongodb className="text-2xl md:text-3xl lg:text-5xl" />
+            <BiLogoPostgresql className="text-2xl md:text-3xl lg:text-5xl" />
+            </div>
             <WordFlip />
             <motion.div
               initial={{
