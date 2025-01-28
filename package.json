@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "packageManager": "npm@10.9.0",
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.0",
