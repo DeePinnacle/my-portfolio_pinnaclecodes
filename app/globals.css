@@ -73,7 +73,7 @@ body {
       font-size: 40px;
       color: transparent;
       -webkit-text-stroke: 1px gray;
-      @apply font-jost md:text-[15.625rem]
+      @apply font-jost md:text-7xl
      }
      .hero-section-style{
       @apply px-3 py-24
@@ -85,10 +85,25 @@ body {
       @apply uppercase text-[42px] text-center font-jost
      }
      .hero-img-wrapper{
-      @apply py-2 px-4 bg-gradient-to-br from-primary to-[gray] rounded-md
+      @apply py-2 px-4 bg-gradient-to-br from-primary to-[gray] rounded-md lg:w-11/12
      }
      ul.drive-list{
       list-style-type: circle !important;
      }
   }
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .service-id{
+    color: transparent;
+    -webkit-text-stroke: 1px gray;
+    @apply text-6xl font-jost font-bold
+  }
+  
 }

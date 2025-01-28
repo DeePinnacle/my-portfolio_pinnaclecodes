@@ -11,18 +11,19 @@ const About = () => {
       opacity: 1,
       transition: {
         duration: 2.2,
+        delay: 2
       },
     },
   };
   return (
-    <section className="w-full">
+    <section className="w-full overflow-hidden lg:flex lg:flex-row lg:gap-6">
       <motion.div
         initial={{
-          y: 200,
+          x: "-100%",
           opacity: 0,
         }}
         whileInView={{
-          y: 0,
+          x: 0,
           opacity: 1,
         }}
         transition={{
@@ -31,7 +32,7 @@ const About = () => {
         viewport={{
           once: true,
         }}
-        className="relative w-full h-[45rem] bg-gradient-to-br from-primary to-[gray]"
+        className="relative w-full h-[45rem] bg-gradient-to-br from-primary to-[gray] md:h-[60rem] lg:h-[45rem]"
       >
         <Image
           src="/profile.png"
@@ -43,7 +44,22 @@ const About = () => {
           priority
         />
       </motion.div>
-      <div className="w-full py-4 px-2">
+      <motion.div
+        initial={{
+          x: "100%",
+          opacity: 0
+        }} 
+        whileInView={{
+          x: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: 1.8
+        }}
+        viewport={{
+          once: true
+        }}
+        className="w-full py-4 px-2">
         <motion.h1 
           variants={animationVariants}
           initial="initial"
@@ -51,7 +67,7 @@ const About = () => {
           viewport={{
             once: true
           }}
-          className="uppercase text-6xl font-jost font-semibold mt-4">
+          className="uppercase text-6xl font-jost font-semibold mt-4 md:text-7xl lg:text-4xl">
           About me
         </motion.h1>
         <div className="mt-6">
@@ -62,6 +78,7 @@ const About = () => {
             viewport={{
               once: true,
             }}
+            className="md:text-3xl md:leading-snug md:font-jost lg:text-base"
           >
             Hi, I&apos;m{" "}
             <span className="font-bold font-jost text-slate-300">
@@ -84,6 +101,7 @@ const About = () => {
             viewport={{
               once: true,
             }}
+            className="md:text-3xl md:leading-snug md:font-jost lg:text-base"
           >
             In pursuit of deeper knowledge, I joined{" "}
             <span className="font-bold font-jost text-slate-300">
@@ -105,6 +123,7 @@ const About = () => {
             viewport={{
               once: true,
             }}
+            className="md:text-3xl md:leading-snug md:font-jost lg:text-base"
           >
             Along the way, I&apos;ve built a range of projects, each one adding
             to my understanding of the development process and user-centric
@@ -119,7 +138,7 @@ const About = () => {
             viewport={{
               once: true,
             }}
-            className="uppercase text-4xl font-jost font-semibold my-3"
+            className="uppercase text-4xl font-jost font-semibold my-3 md:text-5xl lg:text-3xl"
           >
             What drives me
           </motion.h1>
@@ -132,23 +151,23 @@ const About = () => {
             }}
             className="drive-list"
           >
-            <li>
+            <li className="md:text-3xl md:leading-snug md:font-jost lg:text-base">
               <span className="font-bold font-jost text-slate-300">Continuous Learning: </span>I&apos;m
               passionate about staying updated with the latest technologies,
               frameworks, and best practices.
             </li>
-            <li>
+            <li className="md:text-3xl md:leading-snug md:font-jost lg:text-base">
               <span className="font-bold font-jost text-slate-300">Problem-Solving: </span>I enjoy
               tackling challenges and finding efficient, elegant solutions.
             </li>
-            <li>
+            <li className="md:text-3xl md:leading-snug md:font-jost lg:text-base">
               <span className="font-bold font-jost text-slate-300">User-Centered Design: </span>Ensuring
               that the end-user has a seamless and enjoyable experience is at
               the core of what I do.
             </li>
           </motion.ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

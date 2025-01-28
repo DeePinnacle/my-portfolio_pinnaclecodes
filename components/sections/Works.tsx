@@ -77,7 +77,7 @@ const Portfolios = () => {
         <MaxWidthWrapper>
             <div className="w-full px-2 py-8">
                 <h1 className="text-7xl text-[gray] font-semibold font-jost">Projects</h1>
-                <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-14">
+                <div className="md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-14">
                     <Tabs tabs={tabs} />
                 </div>
             </div>

@@ -37,15 +37,15 @@ const SkillItem:React.FC<SkillProps> = ({ name, level, delay, icon:Icon }) => {
   return (
     <>
       <span className="flex flex-row items-center justify-between">
-        <span className="flex flex-row items-center gap-2 text-lg"><Icon className="w-8 h-8" /> {name}</span>
-        <span className="skill-level">
+        <span className="flex flex-row items-center gap-2 text-lg md:text-3xl lg:text-base"><Icon className="w-8 h-8 md:w-9 md:h-9 lg:w-6 lg:h-6" /> {name}</span>
+        <span className="skill-level md:text-3xl lg:text-base">
           {counter}
           <span style={{ fontSize: "0.8rem", marginLeft: "4px" }}>%</span>
         </span>
       </span>
       <motion.div
         ref={ref}
-        className={`h-1 bg-[gray] my-3 box-border rounded-full`}
+        className={`h-1 bg-[gray] my-3 box-border rounded-full md:my-6`}
         initial={{ width: 0 }} // Start from 0 width
         animate={isInView ? { width: `${counter}%` } : {}} // Animate to the target width
         transition={{ duration: 2, delay }} // Smooth transition

@@ -36,5 +36,4 @@ export const TrophyIcon = ({ className }: classProps) => (
     <svg className={cn(className)} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
         <path d="M16 2C16.553 2 17 2.447 17 3V5H7V3C7 2.447 7.447 2 8 2H16ZM20 5V7H4V5H20ZM18 9V19C18 19.553 17.553 20 17 20H7C6.447 20 6 19.553 6 19V9H18ZM12 12C13.104 12 14 12.896 14 14C14 15.104 13.104 16 12 16C10.896 16 10 15.104 10 14C10 12.896 10.896 12 12 12ZM11 17H13V19H11V17Z" />
     </svg>
-
 )

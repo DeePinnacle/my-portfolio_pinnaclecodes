@@ -7,8 +7,8 @@ import SoftSkills from '../SoftSkills'
 const Skills = () => {
   return (
     <MaxWidthWrapper>
-        <div className="p-2 py-10">
-          <div className=''>
+        <div className="p-2 py-10 my-4">
+          <div className='lg:grid lg:grid-cols-2 lg:gap-9 overflow-hidden'>
             <FrontendSkills />
             <BackendSkills />
             <DevTools />

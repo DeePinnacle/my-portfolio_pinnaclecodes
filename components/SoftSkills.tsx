@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { FaWrench, FaCommentDots, FaSyncAlt } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa6";
@@ -8,6 +9,8 @@ import { Lightbulb } from "lucide-react"
 import { Skill } from "../types";
 import SkillTemplate from "./ui/skill-template";
 
+import { motion } from "framer-motion"
+
 const SoftSkills = () => {
   const skills: Skill[] = [
     { name: "Problem-solving", level: 95, icon: FaWrench },
@@ -17,14 +20,30 @@ const SoftSkills = () => {
     { name: "Time management", level: 95, icon: IoIosTime },
     { name: "Attention to Detail", level: 95, icon: PiEyesFill },
   ];
+  
   return (
-    <div className="my-4">
-      <div className="">
-        <Lightbulb className="w-full h-72" />
-        <p className="font-jost font-bold text-6xl">Soft Skills</p>
-        <SkillTemplate skills={skills} />
-      </div>
+    <motion.div 
+    initial={{
+      opacity:0,
+      x: "100%"
+    }}
+    whileInView={{
+      opacity: 1,
+      x: 0,
+      transition:{
+        duration: 2
+      }
+    }}
+    viewport={{
+      once: true
+    }}
+      className="mt-4 mb-2 bg-black/40 p-4 rounded-xl">
+    <div className="flex flex-row items-center gap-8">
+      <Lightbulb className="w-2/5 h-72 md:w-1/4 lg:w-1/4 lg:h-28" />
+      <p className="font-jost font-bold text-5xl md:text-6xl lg:text-4xl">Soft Skills</p>
     </div>
+    <SkillTemplate skills={skills} />
+  </motion.div>
   );
 };
 

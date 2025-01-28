@@ -12,7 +12,7 @@ interface Skill {
 
 const SkillTemplate = ({ skills }:Skill) => {
   return (
-    <div className=" my-6">
+    <div className="my-6">
     {skills.map((skill, index) => (
       <SkillItem
         key={index}
