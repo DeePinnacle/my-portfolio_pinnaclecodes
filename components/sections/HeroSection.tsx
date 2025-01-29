@@ -127,7 +127,7 @@ const HeroSection = () => {
               transition={{
                 duration: 2.2,
               }}
-              className="text-center bg-primary text-[gray] p-2 rounded-full md:py-4 md:w-3/4 md:text-xl md:mx-auto md:my-4 lg:w-1/2 lg:text-base"
+              className="text-center bg-primary text-[gray] text-[clamp(.5rem, 2vw, 1rem)] p-2 rounded-full md:py-4 md:w-3/4 md:text-xl md:mx-auto md:my-4 lg:w-1/2 lg:text-base"
             >
               Transforming Ideas into Digital Experiences 🚀
             </motion.p>
@@ -143,7 +143,7 @@ const HeroSection = () => {
               transition={{
                 duration: 2.2,
               }}
-              className="name-style md:text-7xl md:mb-2 lg:text-8xl lg:font-jost"
+              className="name-style"
             >
               LAWAL KAMALDEEN.
             </motion.p>

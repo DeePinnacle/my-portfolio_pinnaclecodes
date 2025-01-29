@@ -14,9 +14,9 @@ const Navbar = () => {
         <li>
           <Link href="#services">Projects</Link>
         </li>{" "}
-        <li>
+        {/* <li>
           <Link href="#footer">Contact</Link>
-        </li>
+        </li> */}
       </ul>
       <div className="flex flex-row items-center gap-2">
         <div className="flex flex-row items-center justify-center w-4 h-4 bg-green-300 rounded-full animate-pulse md:w-6 md:h-6">

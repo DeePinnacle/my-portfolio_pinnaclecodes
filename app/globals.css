@@ -71,7 +71,7 @@ body {
       -webkit-text-fill-color: transparent;
     } */
      .portfolio-logo{
-      font-size: 40px;
+      font-size: clamp(2rem, 5vw, 4rem);
       color: transparent;
       -webkit-text-stroke: 1px gray;
       @apply font-jost md:text-7xl
@@ -82,8 +82,8 @@ body {
      .name-style{
       /* color: transparent;
       -webkit-text-stroke: 1px gray; */
-
-      @apply uppercase text-[42px] text-center font-jost
+      font-size: clamp(2rem, 4vw, 4rem);
+      @apply uppercase text-center font-jost md:text-7xl md:mb-2 lg:text-8xl lg:font-jost
      }
      .hero-img-wrapper{
       @apply py-2 px-4 bg-gradient-to-br from-primary to-[gray] rounded-md lg:w-11/12

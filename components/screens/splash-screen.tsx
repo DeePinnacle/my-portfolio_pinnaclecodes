@@ -66,7 +66,7 @@ const SplashScreen = () => {
           duration: 3,
           ease: "easeIn",
         }}
-        className="portfolio-logo"
+        className="portfolio-logo text-base"
       >
         { name }
       </motion.p>
