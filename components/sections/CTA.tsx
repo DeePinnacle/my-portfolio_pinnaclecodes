@@ -18,7 +18,7 @@ const CTA = () => {
           opacity: 1,
         }}
         transition={{
-          duration: 2,
+          duration: 0.4,
         }}
         viewport={{
           once: true,
@@ -46,7 +46,7 @@ const CTA = () => {
           opacity: 1,
         }}
         transition={{
-          duration: 2,
+          duration: 0.4,
         }}
         viewport={{
           once: true,
@@ -65,14 +65,14 @@ const CTA = () => {
           <div className="relative w-3/5 h-16 p-4 border-2 border-solid border-[#050505e3] md:h-24 lg:h-16">
             <Link
               href=""
-              className="px-4 py-5 w-full text-center absolute -top-4 -left-4 bg-primary flex flex-row items-center justify-center md:text-3xl md:h-24 lg:h-16 lg:text-base"
+              className="px-4 py-5 w-full h-16 text-center absolute -top-4 -left-4 bg-primary flex flex-row items-center justify-center md:text-3xl md:h-24 lg:h-16 lg:text-base"
             >
               Let&apos; work Together
             </Link>
           </div>{" "}
           <Link
             href=""
-            className="px-4 py-4 border-2 border-solid border-[#050505e3] md:w-2/4 md:h-24 md:text-3xl flex flex-row items-center justify-center lg:h-16 lg:text-base"
+            className="h-16 px-4 border-2 border-solid border-[#050505e3] flex flex-row items-center justify-center md:w-2/4 md:h-24 md:text-3xl lg:h-16 lg:text-base"
           >
             Contact me
           </Link>
@@ -81,17 +81,17 @@ const CTA = () => {
           <AnimatedTooltip items={items} />
         </div>
         <div className="flex flex-row flex-wrap items-center gap-4 md:flex-nowrap">
-          <div className="h-32 bg-[#050505e3] rounded-lg p-2 w-full">
-            <p className="font-jost text-6xl">4+ years</p>
-            <p className="font-Sacramento text-5xl md:text-6xl">Experience</p>
+          <div className="bg-[#050505e3] rounded-lg px-2 py-5 w-full lg:py-4">
+            <p className="font-jost text-6xl">4+</p>
+            <p className="font-Sacramento text-5xl md:text-6xl lg:text-5xl">Experience</p>
           </div>
-          <div className="h-32 bg-[#050505e3] rounded-lg p-2">
-            <p className="font-jost text-4xl">10+</p>
-            <p className="font-Sacramento text-5xl md:text-6xl">Projects</p>
-          </div>{" "}
-          <div className="w-60 h-32 bg-[#050505e3] rounded-lg p-2">
+          <div className="w-full bg-[#050505e3] rounded-lg px-2 py-5 lg:py-4">
             <p className="font-jost text-6xl">10+</p>
-            <p className="font-Sacramento text-5xl md:text-6xl">Customers</p>
+            <p className="font-Sacramento text-5xl md:text-6xl lg:text-5xl">Projects</p>
+          </div>{" "}
+          <div className="w-full bg-[#050505e3] rounded-lg px-2 py-5 lg:py-4">
+            <p className="font-jost text-6xl">10+</p>
+            <p className="font-Sacramento text-5xl md:text-6xl lg:text-5xl">Customers</p>
           </div>
         </div>
       </motion.div>

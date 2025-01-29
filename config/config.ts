@@ -7,7 +7,7 @@ export const animationVariants = {
       opacity: 1,
       y: 1,
       transition: {
-        duration: idx * 1.6
+        duration: idx * 0.4
       }
     })
   }
